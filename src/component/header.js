@@ -10,7 +10,7 @@ const Header = (props) => {
 
     return <div className="header">
              
-                      <div className="logo">
+                      <div className="logo" style={{'color':'white'}}>
                          <Slogo/>
                       </div>
 

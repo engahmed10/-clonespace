@@ -1,0 +1,21 @@
+.header{
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100vw;
+  height: 100px;
+}
+
+.center{
+   flex: 1;
+   float: left;
+
+}
+
+.center > p {
+    display:inline-block;
+    margin-left:2rem;
+    text-transform: uppercase;
+ }
+ 
