@@ -5,17 +5,72 @@
   top: 0;
   width: 100vw;
   height: 100px;
+  margin: 2rem;
+  text-align: left;
 }
+.logo{
 
+   display: block;
+   height: auto;
+   width: auto;
+   margin-left: 40px;
+}
 .center{
-   flex: 1;
-   float: left;
+  display: inline-block;
+  flex: 1;
+  justify-content: center;
+  
 
 }
-
-.center > p {
+.center > p{
     display:inline-block;
-    margin-left:2rem;
     text-transform: uppercase;
+    color:none;
+    font: 12px/28px D-DIN-Bold,Arial,Verdana,sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: underline;
+    padding-left: 1rem;
+}
+ .center > p:hover{
+    
  }
  
+
+ .right{
+     display: inline-block;
+     padding-right: 5rem;
+  
+ }
+.right > p {
+    float: left;
+    margin-right: 10px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font: 12px/28px D-DIN-Bold,Arial,Verdana,sans-serif;
+
+}
+
+
+ .menue {
+    float: left;
+    
+  
+}
+
+@keyframes movelink{
+
+  0%{ 
+
+     opacity:0;
+     transform:translateX(3rem) ;
+  }
+  100%{
+
+    opacity:1;
+    transform:translateX(0) ;
+  }
+
+}
+
