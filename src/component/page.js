@@ -50,13 +50,14 @@ const Page = ({backgroundpic,text1,text2,text3,text4,btn, lastpage}) => {
                   </div>}
 
                   { lastpage &&
-                  <div> 
-                        <div> DRAGON DOCKING SIMULATOR </div>
-                        <div>Dragon is designed to autonomously dock and 
+                  <div className="last"> 
+                        <div  className="one"> DRAGON DOCKING SIMULATOR </div>
+                        <div className="two" >
+                              Dragon is designed to autonomously dock and 
                               undock with the International Space Station. However
                             ,the crew can take manual control of the spacecraft if necessary
                         </div>
-                        <div>Try Now</div>
+                        <div className="last-btn">Try Now</div>
                   </div>
                   }
                   
