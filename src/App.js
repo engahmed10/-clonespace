@@ -14,27 +14,26 @@ function App() {
             backgroundpic={xspace}
             text1={" Upcoming Launch "}
             text2={" Crew-2 Mission "}
-            btn={<button type="">Learn More</button>}
+            btn="Learn More"
          />
           <Page
-             backgroundpic={xspace2}
-            text1={"STARSHIP TO LAND NASA ASTRONAUTS ON THE MOON"}
-            text2={"NASA ASTRONAUTS ON THE MOON"}
-             btn={<button type="">Learn More</button>}
+              backgroundpic={xspace2}
+             text1=""
+             text2=" Starship To Land "
+             text3="Nasa Astronauts On "
+             text4="The Moon"
+             btn="Learn More"
          />
           <Page
              backgroundpic={xspace3}
             text1={"RECENT LAUNCH"}
               text2="STARLINK MISSION"
-          btn={<button type="">Replay</button>}
+              btn="Replay"
          />
           <Page
              backgroundpic={xspace4}
-            text="DRAGON DOCKING SIMULATOR"
-            text2="Dragon is designed to autonomously dock and 
-            undock with the International Space Station. However
-            ,the crew can take manual control of the spacecraft if necessary"
-          btn={<button type="">Try Now</button>}
+             lastpage
+          
          />
 
     </div>

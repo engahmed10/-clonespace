@@ -14,12 +14,11 @@ const useStyles = makeStyles((theme) => ({
     
   },
   outlined:{
-
   },
 }));
 
 
-const Page = ({backgroundpic,text1,text2,btn}) => {
+const Page = ({backgroundpic,text1,text2,text3,text4,btn, lastpage}) => {
    const classes = useStyles();
     return (
          <div  className="image" style={{width:'100vw',height:'100vh', 
@@ -30,22 +29,39 @@ const Page = ({backgroundpic,text1,text2,btn}) => {
                       
                   }}>
             
-                  <div className="body-container">
-                      <div className="text">
-                          <div className="text1">
-                              {text1}
-                          </div>
+          <div className="body-container">
+              <div className="text">
+                  <div className="text1">
+                      {text1}
+                  </div>
 
-                          <div className="text2">
-                              {text2}
-                          </div>
+                  <div className="text2">
+                      {text2}
+                  </div>
+                    <div className="text2">
+                      {text3}
+                  </div>
+                    <div className="text2">
+                      {text4}
+                  </div>
 
-                          <div className="button">
-                            {btn}
-                          </div>
-                          
-                      </div>
-                  </div>  
+                  {!lastpage && <div className="button">
+                    {btn}
+                  </div>}
+
+                  { lastpage &&
+                  <div> 
+                        <div> DRAGON DOCKING SIMULATOR </div>
+                        <div>Dragon is designed to autonomously dock and 
+                              undock with the International Space Station. However
+                            ,the crew can take manual control of the spacecraft if necessary
+                        </div>
+                        <div>Try Now</div>
+                  </div>
+                  }
+                  
+              </div>
+          </div>  
               
         </div>
     );
