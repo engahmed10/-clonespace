@@ -5,21 +5,11 @@ import page from './page.css'
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
-  margin: {
-    margin: theme.spacing(3),
-  },
-  extendedIcon: {
-    marginRight: theme.spacing(1),
-    
-  },
-  outlined:{
-  },
-}));
 
 
-const Page = ({backgroundpic,text1,text2,text3,text4,btn, lastpage}) => {
-   const classes = useStyles();
+
+const Page = ({backgroundpic,text1,text2,text3,text4,btn, lastpage,second}) => {
+
     return (
          <div  className="image" style={{width:'100vw',height:'100vh', 
                backgroundImage:`url(${backgroundpic})`,  
@@ -35,17 +25,17 @@ const Page = ({backgroundpic,text1,text2,text3,text4,btn, lastpage}) => {
                       {text1}
                   </div>
 
-                  <div className="text2">
+                  <div  style={ second? {'text-align': 'justify'}:{}} className="text2">
                       {text2}
                   </div>
-                    <div className="text2">
+                    <div className="text3">
                       {text3}
                   </div>
-                    <div className="text2">
+                    <div className="text4">
                       {text4}
                   </div>
 
-                  {!lastpage && <div className="button">
+                  {!lastpage &&  <div style={second? {  width:'100px',height:'30px','padding-top': '13px','font-size':'15px'} : {}}  className="button">
                     {btn}
                   </div>}
 
@@ -53,9 +43,9 @@ const Page = ({backgroundpic,text1,text2,text3,text4,btn, lastpage}) => {
                   <div className="last"> 
                         <div  className="one"> DRAGON DOCKING SIMULATOR </div>
                         <div className="two" >
-                              Dragon is designed to autonomously dock and 
+                             <p> Dragon is designed to autonomously dock and 
                               undock with the International Space Station. However
-                            ,the crew can take manual control of the spacecraft if necessary
+                            ,the crew can take manual control of the spacecraft if necessary</p>
                         </div>
                         <div className="last-btn">Try Now</div>
                   </div>

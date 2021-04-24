@@ -23,18 +23,21 @@ function App() {
              text3="Nasa Astronauts On "
              text4="The Moon"
              btn="Learn More"
+        second
          />
           <Page
-             backgroundpic={xspace3}
-            text1={"RECENT LAUNCH"}
+              backgroundpic={xspace3}
+              text1={"RECENT LAUNCH"}
               text2="STARLINK MISSION"
               btn="Replay"
+              third
          />
           <Page
              backgroundpic={xspace4}
              lastpage
           
          />
+      
 
     </div>
   );
