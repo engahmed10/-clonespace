@@ -1,10 +1,6 @@
 import React from 'react';
-import header from './header.css';
-import xspace from '../images/xspace.jpg'
-import page from './page.css'
-import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
-
+import './header.css';
+import './page.css'
 
 
 

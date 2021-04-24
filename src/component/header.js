@@ -1,4 +1,4 @@
-import header from './header.css';
+import './header.css';
 import Slogo from './logo.js'
 import Hamburger from 'hamburger-react'
 import React, { useState } from 'react'
