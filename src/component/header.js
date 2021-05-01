@@ -3,7 +3,7 @@ import Slogo from './logo.js'
 import Hamburger from 'hamburger-react'
 import React, { useState } from 'react'
 import { BrowserRouter as Link}  from 'react-router-dom' 
-
+import {slide as Menu }  from 'react-burger-menu'
 const Header = (props) => {
 
     const [isOpen, setOpen] = useState(false)

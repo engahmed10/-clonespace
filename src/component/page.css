@@ -19,6 +19,7 @@
    border: 2px solid;
 }
 
+
 .text  .text1{
        
         position: relative;
@@ -109,3 +110,19 @@
         margin-left: 30px;
         padding-top: 5px;
 }
+
+.text .button:hover{
+     
+        background-color: red;
+        animation-name: moveup;  
+        animation-duration: 1s;
+        color:black;
+
+}
+
+@keyframes moveup{
+       
+        from{background-color: transparent;}
+        to{background-color: white;}
+}
+      
