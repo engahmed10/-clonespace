@@ -26,7 +26,15 @@ const Header = (props) => {
                         <p>Shop</p>
                        
                         <div className="menue">
-                            <Hamburger style={{width:'5px',heigh:'5px'}} toggled={isOpen} toggle={setOpen} />
+                          <Menu  right customBurgerIcon={  <Hamburger style={{width:'5px',heigh:'5px'}} toggled={isOpen} toggle={setOpen} />} width={ '30%' }  >
+                           
+                            <a>Mission</a>
+                            <a>Launches</a>
+                            <a>Career</a>
+                            <a>Updates</a>
+                            <a>Shop</a>
+                            
+                          </Menu>
                         </div>
                       </div>
 
