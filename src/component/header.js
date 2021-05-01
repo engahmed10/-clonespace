@@ -26,7 +26,7 @@ const Header = (props) => {
                         <p>Shop</p>
                        
                         <div className="menue">
-                          <Menu  right customBurgerIcon={  <Hamburger style={{width:'5px',heigh:'5px'}} toggled={isOpen} toggle={setOpen} />} width={ '30%' }  >
+                          <Menu  right customBurgerIcon={ <img src="menu.png" />  } width={ '30%' }  >
                            
                             <a>Mission</a>
                             <a>Launches</a>
